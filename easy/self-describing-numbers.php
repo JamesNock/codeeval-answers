@@ -1,9 +1,7 @@
 <?php
 
-$lines = ['2020', '22', '1210'];
-foreach ($lines as $line) {
-/*$fh = fopen($argv[1], "r");
-while ($line = fgets($fh)) {*/
+$fh = fopen($argv[1], "r");
+while ($line = fgets($fh)) {
 	if ($line) {
 		$x = 0;
 
@@ -17,6 +15,5 @@ while ($line = fgets($fh)) {*/
 		echo $self_desc ? 1 : 0;
 		echo PHP_EOL;
 	}
-//}
 }
 
